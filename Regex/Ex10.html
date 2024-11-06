@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Kiểm tra tên người dùng có hợp lệ !!!</h1>
+    <div>
+        <span>Nhập tên người dùng </span>
+        <input type="text" id="input">
+        <input type="submit" onclick="handleSubmit()">
+        <h3></h3>
+    </div>
+
+    <script>
+        function clear(){
+            document.getElementById('input').value = '';
+        }
+
+        function handleSubmit(){
+            const inputValue = document.getElementById('input').value;
+            console.log('inputValue', inputValue)
+
+            const regex = /^[a-zA-Z0-9._]{3,16}$/;
+            
+            const resultString = regex.test(inputValue);
+
+            console.log("resultString", resultString);
+            
+
+            if(resultString) alert("Hợp lý nhé !!"); else alert("Không hợp lý tẹo nào hết ^^");
+
+            clear()
+        }
+    </script>
+</body>
+</html>

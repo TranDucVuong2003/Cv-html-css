@@ -1,0 +1,59 @@
+Bài 1: Kiểm tra số chẵn lẻ
+Viết một hàm để kiểm tra xem một số có phải là số chẵn hay không.
+
+Bài 2: Đảo ngược chuỗi
+Viết một hàm để đảo ngược chuỗi.
+
+Bài 3: Tính giai thừa
+Viết một hàm để tính giai thừa của một số
+
+Bài 4: Tìm số lớn nhất trong mảng
+Viết một hàm để tìm số lớn nhất trong một mảng số.
+
+Bài 5: Loại bỏ giá trị trùng lặp trong mảng
+Viết một hàm để loại bỏ các phần tử trùng lặp trong một mảng.
+
+Bài 6: Tính tổng các phần tử trong mảng
+Viết một hàm để tính tổng các phần tử trong một mảng số.
+
+Bài 7: Kiểm tra số nguyên tố
+Viết một hàm để kiểm tra xem một số có phải là số nguyên tố hay không.
+
+Bài 8: Sắp xếp mảng đối tượng theo tuổi
+Viết một hàm để sắp xếp một mảng đối tượng theo thuộc tính age.
+const people = [
+  { name: 'Alice', age: 25 },
+  { name: 'Bob', age: 30 },
+  { name: 'Charlie', age: 20 }
+];
+
+Bài 9: Đếm số lần xuất hiện của phần tử trong mảng
+Viết một hàm để đếm số lần xuất hiện của từng phần tử trong một mảng.
+
+Bài 10: Kiểm tra chuỗi Palindrome
+Viết một hàm để kiểm tra xem một chuỗi có phải là Palindrome (chuỗi đối xứng) hay không.
+
+----DOM
+1. Bài tập: Thay đổi nội dung của phần tử HTML
+Yêu cầu: Viết JavaScript để thay đổi nội dung văn bản của một phần tử <p> có ID là "myText".
+
+2. Bài tập: Thay đổi màu nền của trang
+Yêu cầu: Viết JavaScript để thay đổi màu nền của trang khi nhấn vào nút.
+
+3. Bài tập: Thêm phần tử vào danh sách
+Yêu cầu: Viết JavaScript để thêm một mục mới vào một danh sách <ul>.
+
+4. Bài tập: Ẩn và hiện phần tử HTML
+Yêu cầu: Viết JavaScript để ẩn và hiện một phần tử khi nhấn vào nút.
+
+5. Bài tập: Đếm số lần nhấn nút
+Yêu cầu: Viết JavaScript để đếm và hiển thị số lần nhấn vào một nút.
+
+6. Bài tập: Thay đổi hình ảnh khi nhấn chuột
+Yêu cầu: Viết JavaScript để thay đổi hình ảnh khi nhấn vào một nút.
+
+7. Bài tập: Lấy giá trị từ input và hiển thị
+Yêu cầu: Viết JavaScript để lấy giá trị từ một ô input và hiển thị nó trên trang.
+
+8. Bài tập: Thay đổi kích thước văn bản
+Yêu cầu: Viết JavaScript để thay đổi kích thước của văn bản khi nhấn vào nút.

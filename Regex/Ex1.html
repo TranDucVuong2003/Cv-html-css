@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .form-imputEmail{
+            display: flex;
+        }
+    </style>
+    <div class="form-imputEmail">
+        <span>Nhập địa chỉ Email:  </span> 
+        <input id="inputEmail" type="text">
+        <input class="btn-submit" onclick="handleSunmit()" type="submit">
+    </div>
+    <script>
+        // Clear code sau khi ấn nút button
+        function clear(){
+            document.getElementById('inputEmail').value = "";
+        }
+
+        // lấy dữ liệu nhập vào ô input và xử lí
+        function handleSunmit() {
+            let status = true;
+            let emailRegex = /^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+            emailValue = document.getElementById('inputEmail').value;
+            console.log(emailValue);
+            
+            if (emailRegex.test(emailValue)) alert("Email đã được thêm !!")
+            else (alert("Lỗi cú pháp !"))
+            // clear()
+        }
+
+        function isEmail() {
+        }
+    </script>
+</body>
+
+</html>

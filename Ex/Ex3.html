@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        align-items: center;
+        gap: 18px;
+    }
+</style>
+<div>
+    <h1>Tính giai thừa !</h1>
+    <label  for="">Mời nhập số: </label>
+    <input type="text" class="input1" value="">
+    <input type="submit" onclick="checkNumber()">
+</div>
+
+<body>
+    <script>
+        console.log('asd')
+        function checkNumber() {
+            let inputNumber = document.getElementsByTagName("input")[0].value;
+            let result = 1;
+            for(let i = 1; i <= inputNumber;  i++){
+                result =  result * i;
+            }
+            alert('Giai thừa là: ' + result)
+        }
+        
+    </script>
+</body>
+
+</html>

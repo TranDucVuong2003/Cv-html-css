@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Viết một hàm để kiểm tra xem một chuỗi có phải là Palindrome (chuỗi đối xứng) hay không.</h4>
+    <h3></h3>
+    <h3></h3>
+    <h3></h3>
+    <script>
+        const name = 'madam';
+        
+        function isPalindrome(param){
+            let reverseString = param.split('').reverse().join('');
+            
+            document.getElementsByTagName("h3")[0].innerHTML = `Chuỗi ban đầu: ${param}`
+            document.getElementsByTagName("h3")[1].innerHTML = `Chuỗi đảo ngược: ${reverseString}`
+
+            if (param === reverseString){
+                return "Chuỗi là Palindrome";
+            } else {
+                return "Chuỗi không phải là Palindrome";
+            }
+        }
+        document.getElementsByTagName("h3")[2].innerHTML += `<br>Kết quả: ${isPalindrome(name)}`;
+
+        
+    </script>
+</body>
+</html>

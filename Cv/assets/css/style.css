@@ -1,0 +1,231 @@
+body {
+    margin: 20px;
+    background-color: #f1f2f6 ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.border-bottom{
+    border-bottom:solid #a3e3f0 ;
+    margin: 12px;
+}
+
+.main-toppic{
+    /* margin-left: 12px; */
+    color: #00b4d8;
+    font-size: 18px;
+    margin: 30px 0 30px 12px;
+}
+
+
+
+.main {
+    display: flex;
+    flex-direction: row;
+    /* gap: px; */
+    justify-content: center;
+    /* background-color: white; */
+}
+
+/* -------------------------------left side----------------------------- */
+
+
+/* top left side */
+.left-side {
+    min-width:400px;
+    background-color: #daf4f9;
+}
+
+.top-left-side {}
+
+.main-infor {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#personal-name {
+    color: #00b4d8;
+    font-size: 28px;
+}
+
+#rule {
+    margin-top: -15px;
+}
+
+.out-picture {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-size: 200px;
+    background-position: -2px -17px;
+    background-image: url(../img/personal-picture.jpg);
+    border: solid 3px #00b4d8;
+}
+
+.personal-picture {
+    width: 180px;
+}
+
+.other-infor li:first-child{
+    margin-top: -5px;
+}
+
+.other-infor li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+.other-infor li i {
+    color: #00b4d8;
+    font-size: 14px;
+
+}
+
+.other-infor li span {
+    font-size: 12px;
+    margin-left: 10px;
+    letter-spacing: 0.8px;
+}
+
+
+/* mid left side */
+.main-branch{
+    margin-top: 30px;
+    margin-left: 12px;
+    margin-bottom: -8px;
+    line-height: 20px;
+
+}
+
+.mid-left-side li{
+    line-height: 24px;
+    font-size: 15px;
+}
+
+.soft-skills li{
+    list-style: none;
+    margin-left: -25px;
+}
+
+
+/* end left side */
+.end-left-side li{
+    list-style: none;
+    margin-left: -25px;
+    font-size: 14px;
+}
+
+.empty{
+    padding-bottom: 8px;
+    background-color: #daf4f9;
+}
+
+/* -------------------------------right side----------------------------- */
+.time-opacity{
+    opacity: 0.4;
+    font-size: 14px;
+}
+
+.right-side {
+    max-width: 490px;
+    background-color: white;
+}
+
+.font-weight{
+    font-weight: 700;
+    font-size: 16px;
+}
+.major-infor{
+    margin-left: 4px;
+}
+/* <!-- target work --> */
+.right-side h3{
+    margin-left: 0px  
+}
+
+.right-side .border-bottom{
+    margin-right: 0px;
+}
+
+.part-right-side{
+    margin-left: 12px;
+}
+
+.target-work span{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+/* <!-- level education --> */
+
+
+.descrition{
+    display: flex;
+    justify-content: space-between;
+}
+
+.khoa{
+    font-size: 15px;
+}
+
+.major-name{
+    font-size: 14px;
+}
+
+/* <!-- action --> */
+/* <!-- work experience --> */
+
+.part-ex{
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

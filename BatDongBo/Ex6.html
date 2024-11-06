@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function fetchData1() {
+            let myPromise1 = new Promise((resolve, reject) => {
+                resolve("đã được xử lí lần 1")
+                reject("xử lí thất bại lần 1")
+            })
+            return myPromise1;
+        }
+
+        function fetchData2() {
+            let myPromise = new Promise((resolve, reject) => {
+                resolve("đã được xử lí lần 2")
+                reject("xử lí thất bại lần 2")
+            })
+            return myPromise;
+        }
+
+        async function fetchAllData() {
+            await Promise.all([fetchData1(), fetchData2()])
+            .then((x) => { console.log(x) });
+        }
+
+        fetchAllData();
+    </script>
+</body>
+
+</html>

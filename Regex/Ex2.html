@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .form-imputNumberPhone{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .btn-submit{
+            padding: 20px;
+            background-color: #1bcce0;
+            border: none;
+            border: solid #ddd 1px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <div class="form-imputNumberPhone">
+        <span>Nhập số điện thoại: </span> 
+        <input id="inputPhoneNumber" type="text">
+        <input class="btn-submit" onclick="handleSunmit()" type="submit">
+    </div>
+    <script>
+        // Clear code sau khi ấn nút button
+        function clear(){
+            document.getElementById('inputPhoneNumber').value = "";
+        }
+
+        // lấy dữ liệu nhập vào ô input và xử lí
+        function handleSunmit() {
+            // let status = true;
+    
+            let phoneNumberRegex = /^(?:\+84|0)\s?[1-9]\d{8,9}$/;
+            //  /^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+            phoneNumberValue = document.getElementById('inputPhoneNumber').value;
+            
+            
+            if (phoneNumberRegex.test(phoneNumberValue)) alert(" Số điện thoại đã được thêm !!")
+            else (alert("Lỗi cú pháp !"))
+            // clear()
+        }
+
+    </script>
+</body>
+
+</html>

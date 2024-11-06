@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        span{
+            /* font-size: 50px; */
+        }
+    </style>
+    <span>Anh Vương</span>
+    <button onclick="handleChangeSize()">Check</button>
+    <script>
+        const spanElement = document.getElementsByTagName('span')[0];
+
+        let fontSize = 0;
+        function handleChangeSize() {
+            fontSize = fontSize + 20;
+            spanElement.style.fontSize = `${fontSize}px`;
+        }
+    </script>
+</body>
+</html>

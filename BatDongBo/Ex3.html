@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function fetchData() {
+            const promise = new Promise(
+                function (resolve, reject) {
+                    console.log('T đang lấy dữ liệu: ');
+                    setTimeout(() => {
+                        let abc = "ok"
+                        let status = false;
+                        if (status) resolve(abc)
+                        else reject("false")
+                    }, 3000)
+                }
+            )
+            return promise;
+        }
+
+        fetchData()
+            .then(value => {
+                console.log(value);
+            })
+            .catch(error => {
+                console.log(error);
+            })
+            ;
+
+        const getData = async() => {
+            try {
+                await fetchData;
+            } catch (error) {
+                console.log("abcd looi roi");
+                
+            }
+        }
+
+    </script>
+</body>
+
+</html>

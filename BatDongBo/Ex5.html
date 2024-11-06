@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>JavaScript async / await</h1>
+    <h2 id="demo"></h2>
+    <h2 id="demo1"></h2>
+
+    <script>
+        async function myDisplay() {
+
+            let myPromise = new Promise(function (resolve, reject) {
+                setTimeout ( ()=> resolve("I love You !!"), 3000)
+        });
+        document.getElementById("demo").innerHTML = await myPromise;
+        document.getElementById("demo1").innerHTML = 'Vương';}
+
+
+        myDisplay();
+    </script>
+
+</body>
+
+</html>

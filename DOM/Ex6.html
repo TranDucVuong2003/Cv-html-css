@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .item {
+            display: flex;
+            gap: 150px;
+        }
+
+        img {
+            width: 450px;
+        }
+
+        button {
+            width: 200px;
+            height: 150px;
+            margin-top: 160px;
+        }
+    </style>
+    <div class="item">
+        <img src="https://duhocsunny.edu.vn/wp-content/uploads/2023/02/Gai-xinh-Han-Quoc-de-thuong.jpg"
+            alt="Ảnh Trần Hà Linh">
+        <button onclick="changeUrl()">Đổi em khác</button>
+        <button onclick="changeUrl2()">Về em cũ</button>
+
+    </div>
+
+    <script>
+
+        const imgElement = document.getElementsByTagName('img')[0]; 
+
+        function changeUrl(){
+            imgElement.src = 'https://cdn.aicschool.edu.vn/wp-content/uploads/2024/05/anh-gai-dep-tu-nhien-1.jpg';
+        }
+
+        function changeUrl2(){
+            imgElement.src = 'https://duhocsunny.edu.vn/wp-content/uploads/2023/02/Gai-xinh-Han-Quoc-de-thuong.jpg';
+
+        }
+    </script>
+</body>
+
+</html>

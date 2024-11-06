@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        button{
+            height: 300px;
+            width: 500px;
+        }
+
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+    <div class="btn"><button onclick="handleClick()">Bấm vào đây</button></div>
+    <script>
+        const listName = [
+            {
+                name: "Vuong",
+                age: 22
+            },
+            {
+                name: "Loi",
+                age: 21
+            },
+            {
+                name: "Minh",
+                age: 21
+            }
+        ]
+
+        function getName(arr){
+            arr.map((value)=>{
+                alert('xin chao ' + value.name);
+            })
+        }
+
+        function handleClick(){
+            setTimeout(getName(listName),3000)
+        }
+    </script>
+</body>
+
+</html>

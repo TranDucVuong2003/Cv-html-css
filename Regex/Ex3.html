@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 id="paragraph"></h2>
+    <h2 id="paragraph1"></h2>
+
+    <button onclick="handleClick()">Click here!</button>
+
+    <script>
+        const str = "Trần Đức Vương Quê ở 27 Điện Biên";
+        
+        document.getElementById('paragraph').innerHTML = str;
+
+        function handleString(param) {
+            // Sử dụng regex để tìm tất cả các từ chỉ bao gồm chữ cái (tiếng Anh và tiếng Việt)
+            const strRegex = /[a-zA-ZÀ-ỹ]+/g
+            let notNumber = param.replace(/\s+[0-9]{2}/g, '');
+
+            // Lấy các từ và nối chúng lại với dấu phẩy
+            let words = notNumber.match(strRegex);
+            console.log("notNumber: ", notNumber);
+            console.log("words: ", words);
+            
+            document.getElementById('paragraph1').innerHTML = words.join(" ");
+        }
+
+        function handleClick() {
+            handleString(str);
+        }
+    </script>
+</body>
+
+</html>

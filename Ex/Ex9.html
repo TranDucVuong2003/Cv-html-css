@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Đếm số lần xuất hiện của một phần tử trong 1 mảng [3, 6, 3, 5, 4, 12, 12, 21, 8, 8, 3]</p>
+    <div id="print"></div>
+    <script>
+        const array = [3, 6, 3, 5, 4, 12, 12, 21, 8, 8, 3,3]
+
+        function numberShow(arr){
+            for(let i=0; i < arr.length; i++){
+                let count = 0;
+                arr.forEach((value, index) => {
+                    if (value == arr[i]) count++ ;
+                });
+                document.getElementById("print").innerHTML += `Số lần xuất hiện của số ${arr[i]} là: ${count} <br>`
+            }
+        }
+
+        numberShow(array)
+    </script>
+</body>
+
+</html>

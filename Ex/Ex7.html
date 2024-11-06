@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        align-items: center;
+        gap: 18px;
+    }
+</style>
+<div>
+    <h1>Kiểm tra số nguyên tố</h1>
+    <label  for="">Mời nhập số: </label>
+    <input type="text" class="input1" value="">
+    <input type="submit" onclick="checkNumber()">
+</div>
+
+<body>
+    <script>
+        
+        function checkNumber() {
+            let inputNumber = document.getElementsByTagName("input")[0].value;
+            let status = true;
+
+
+
+            if(inputNumber < 2) {
+                status = false;
+            } else{
+                for(let i = 2; i< inputNumber; i++){
+                    if(inputNumber % i == 0){
+                        status = false;
+                        break;
+                    }
+                }
+            }
+
+            if(status == true){
+                
+                alert('Là số nguyên tố nhé !');
+            } else {
+                alert('Không phải là số nguyên tố !');
+            }
+                
+            }
+        
+    </script>
+</body>
+
+</html>

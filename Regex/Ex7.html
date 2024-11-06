@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Kiểm tra ngày tháng năm có hợp lệ hay không !! </h1>
+    <div>
+        <span>Nhập ngày tháng năm (dd/mm/yyyy ví dụ: 29/02/2024) </span>
+        <input type="text" id="input">
+        <input onclick="handleClick()" style="background-color: red; padding: 22px;" type="submit">
+    </div>
+
+    <script>
+        function clear() {
+            document.getElementById('input').value = "";
+        }
+
+        function handleClick() {
+            const inputValue = document.getElementById('input').value;
+            console.log('inputValue', inputValue);
+
+            const regexDate = /^(0?[1-9]|[12][0-9]|3[01])[\/-](0?[1-9]|1[0-2])[\/-]([0-9]{4})$/
+
+
+            let status = regexDate.test(inputValue);
+            // Kiểm tra định dạng
+            if (!status) {
+                // Không phải định dạng hợp lệ
+                alert('Ngày tháng năm không hợp lệ, mời nhập lại !!')
+                clear();
+            } else(
+                alert("Ngày tháng năm hợp lệ !!")
+            )
+
+            // // Tách các phần ngày, tháng, năm
+            // const parts = dateString.split('/');
+            // const day = parseInt(parts[0], 10);
+            // const month = parseInt(parts[1], 10);
+            // const year = parseInt(parts[2], 10);
+
+            // // Kiểm tra số ngày hợp lệ cho từng tháng
+            // if (month === 2) { // Tháng 2
+            //     const isLeapYear = (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+            //     return day <= (isLeapYear ? 29 : 28);
+            // } else if ([4, 6, 9, 11].includes(month)) { // Các tháng 30 ngày
+            //     return day <= 30;
+            // } else { // Các tháng 31 ngày
+            //     return day <= 31;
+            // }
+        }
+    </script>
+</body>
+
+</html>

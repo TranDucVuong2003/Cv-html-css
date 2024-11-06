@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const fetchData1 = () => {
+            return new Promise(
+                (resolve, reject) => {
+                    setTimeout(() => {
+                        let number = 2;
+                        if (number = 2) resolve("so 2")
+                        else reject("K phai so 2")
+                    }, 4000)
+                }
+            )
+
+        }
+        const fetchData2 = () => {
+            return new Promise(
+                (resolve, reject) => {
+                    setTimeout(() => {
+                        let number = 4;
+                        if (number = 4) resolve("so 4")
+                        else reject("K phai so 4")
+                    }, 5000)
+                }
+            )
+        }
+
+        Promise.all([fetchData1(), fetchData2()])
+            .then((value) => {
+                console.log('Data cuar resolve: ', value);
+
+            })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        align-items: center;
+        gap: 18px;
+    }
+</style>
+<div>
+    <h1>Phân biệt chẵn lẻ</h1>
+    <label  for="">Mời nhập số: </label>
+    <input type="text" class="input1" value="">
+    <input type="submit" onclick="checkNumber()">
+</div>
+
+<body>
+    <script>
+        
+        function checkNumber() {
+            let inputNumber = document.getElementsByTagName("input")[0].value;
+        
+                
+            if (inputNumber % 2 == 0) {
+                alert('Số chẵn');
+            } else {
+                alert('Số lẻ');
+            }}
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 20px;
+        }
+        button{
+            width: 100px;
+            height: 70px;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        span{
+            font-size: 32px;
+        }
+    </style>
+    <div class="item">
+        <button onclick="countElement()">Bấm</button>
+        <span>Count: </span>
+    </div>
+
+    <script>
+        let value = 0
+        const countSpan = document.getElementsByTagName('span')[0]; 
+        function countElement(){
+            value ++;
+            countSpan.innerText = `Count: ${value} `
+        }
+
+    </script>
+</body>
+</html>

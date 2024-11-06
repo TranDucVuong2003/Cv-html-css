@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-input">
+        <h1>Kiểm tra chuỗi có số thập phân hay không ?</h1>
+        <span>Nhập chuỗi cần kiểm tra: </span>
+        <input type="text"> <input onclick="handleClick()" style="background-color: red; padding: 22px;" type="submit">
+    </div>
+
+    <script>
+        
+        function handleClick(){
+            
+            const inputValue = document.getElementsByTagName('input')[0].value;
+            console.log('value', inputValue)
+
+            //Mã regex tìm số thập phân
+            const regexDecimal = /-?\d+\.\d+/g;
+
+            //Tìm xem trong inputValue có số thập phân ko, nếu có lưu vào mảng decimal
+            const decimal = inputValue.match(regexDecimal);
+            console.log('decimal', decimal);
+
+            if(!decimal) alert("Không có số thập phân trong chuỗi nhé !!")
+            else alert("Có số thập phân trong chuỗi là "+decimal + "nhé !")
+
+        }
+    </script>
+</body>
+</html>

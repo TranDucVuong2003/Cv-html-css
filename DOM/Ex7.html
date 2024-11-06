@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <input type="text" id="input1" value="" >
+        <button  onclick="sendInfor()" > Gửi</button>
+        <p>Bạn vừa nhập vào thông tin: </p>
+    </form>
+</body>
+
+<script>
+    
+    
+    function sendInfor(){
+        const inputParagraph = document.getElementsByTagName('p')[0];
+        let inputValue = document.getElementById('input1').value;
+
+        inputParagraph.innerHTML = `Bạn vừa nhập vào thông tin: ${inputValue}`
+        console.log('inputValue: ', inputValue);
+    }
+    
+
+</script>
+</html>

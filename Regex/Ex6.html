@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Kiểm tra mật khẩu mạnh !!</h1>
+    <div>
+        <span>Nhập mật khẩu cần kiểm tra: </span>
+        <input type="text" id="input">
+        <input onclick="handleClick()" style="background-color: red; padding: 22px;" type="submit">
+    </div>
+    <script>
+        function handleClick() {
+
+            const inputValue = document.getElementsByTagName('input')[0].value;
+            console.log('value', inputValue)
+
+            const regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*(),.?":{}|<>])[A-Za-z\d!@#$%^&*(),.?":{}|<>]{8,}$/;
+
+            let checkPassword = regexPassword.test(inputValue);
+            console.log('checkPassword', checkPassword);
+
+
+            checkPassword ? alert("Mật khẩu mạnh lắm đó !!") : alert("Mật khẩu không mạnh !!")
+
+            clear()
+        }
+
+        function clear(){
+            document.getElementById('input').value = "";
+        }
+    </script>
+</body>
+
+</html>
