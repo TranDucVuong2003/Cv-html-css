@@ -1,16 +1,17 @@
 body {
     margin: 20px;
-    background-color: #f1f2f6 ;
+    background-color: #f1f2f6;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
-.border-bottom{
-    border-bottom:solid #a3e3f0 ;
+.border-bottom {
+    border-bottom: solid #a3e3f0;
     margin: 12px;
+    
 }
 
-.main-toppic{
+.main-toppic {
     /* margin-left: 12px; */
     color: #00b4d8;
     font-size: 18px;
@@ -32,7 +33,7 @@ body {
 
 /* top left side */
 .left-side {
-    min-width:370px;
+    min-width: 370px;
     background-color: #daf4f9;
 }
 
@@ -68,7 +69,7 @@ body {
     width: 180px;
 }
 
-.other-infor li:first-child{
+.other-infor li:first-child {
     margin-top: -5px;
 }
 
@@ -91,7 +92,7 @@ body {
 
 
 /* mid left side */
-.main-branch{
+.main-branch {
     margin-top: 30px;
     margin-left: 12px;
     margin-bottom: -8px;
@@ -99,61 +100,65 @@ body {
 
 }
 
-.mid-left-side li{
+.mid-left-side li {
     line-height: 24px;
     font-size: 15px;
 }
 
-.soft-skills li{
+.soft-skills li {
     list-style: none;
     margin-left: -25px;
 }
 
 
 /* end left side */
-.end-left-side li{
+.end-left-side li {
     list-style: none;
     margin-left: -25px;
     font-size: 14px;
 }
 
-.empty{
+.empty {
     padding-bottom: 8px;
     background-color: #daf4f9;
 }
 
 /* -------------------------------right side----------------------------- */
-.time-opacity{
+
+.time-opacity {
     opacity: 0.4;
     font-size: 14px;
+    margin-right: 15px;
 }
 
 .right-side {
-    max-width: 490px;
+    max-width: 530px;
     background-color: white;
 }
 
-.font-weight{
+.font-weight {
     font-weight: 700;
     font-size: 16px;
 }
-.major-infor{
+
+.major-infor {
     margin-left: 4px;
 }
+
 /* <!-- target work --> */
-.right-side h3{
-    margin-left: 0px  
+.right-side h3 {
+    margin-left: 0px
 }
 
-.right-side .border-bottom{
-    margin-right: 0px;
+.right-side .border-bottom {
+    margin-right: 12px;
 }
 
-.part-right-side{
+.part-right-side {
     margin-left: 12px;
 }
 
-.target-work span{
+.target-work span {
     font-size: 14px;
     line-height: 20px;
 }
@@ -162,70 +167,22 @@ body {
 /* <!-- level education --> */
 
 
-.descrition{
+.descrition {
     display: flex;
     justify-content: space-between;
 }
 
-.khoa{
+.khoa {
     font-size: 15px;
 }
 
-.major-name{
+.major-name {
     font-size: 14px;
 }
 
 /* <!-- action --> */
 /* <!-- work experience --> */
 
-.part-ex{
+.part-ex {
     margin-bottom: 40px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
